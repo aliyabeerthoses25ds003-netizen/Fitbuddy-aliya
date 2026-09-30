@@ -1,0 +1,13 @@
+RESULTS
+
+The FitBuddy application provides a functional web interface for AI-based workout planning.
+
+1. The application opens on the fitness input form.
+2. The user enters name, user ID, age, weight, goal and intensity.
+3. Gemini generates a day-by-day 7-day workout plan.
+4. The result page shows user information and the generated plan.
+5. A nutrition or recovery tip is generated with the plan.
+6. Users and plans are stored in the SQLite database.
+7. Feedback can be submitted to revise the plan.
+8. The admin dashboard lists stored users and their plans.
+9. Swagger UI is available at /docs for the JSON API routes.

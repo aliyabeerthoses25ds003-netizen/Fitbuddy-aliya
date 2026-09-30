@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#222"/></marker><style>.box{fill:#f7f7f7;stroke:#222;stroke-width:2}.decision{fill:#fff;stroke:#222;stroke-width:2}.txt{font-family:Arial,sans-serif;font-size:22px;fill:#111;text-anchor:middle}.line{stroke:#222;stroke-width:2;fill:none;marker-end:url(#arrow)}</style></defs>
+<rect width="1200" height="1500" fill="#fff"/>
+<text x="600" y="45" class="txt" font-size="30">FitBuddy – System Flowchart</text>
+<rect class="box" x="270" y="80" width="460" height="70" rx="8"/><text x="500" y="123" class="txt" font-size="19">Start – Run FitBuddy (Uvicorn)</text>
+<path class="line" d="M500,150 L500,195"/>
+<rect class="box" x="270" y="195" width="460" height="70" rx="8"/><text x="500" y="238" class="txt" font-size="19">Initialize SQLite database</text>
+<path class="line" d="M500,265 L500,310"/>
+<rect class="box" x="270" y="310" width="460" height="70" rx="8"/><text x="500" y="353" class="txt" font-size="19">Show input form (Home page)</text>
+<path class="line" d="M500,380 L500,425"/>
+<rect class="box" x="270" y="425" width="460" height="70" rx="8"/><text x="500" y="468" class="txt" font-size="19">User enters name, ID, age, weight, goal, intensity</text>
+<path class="line" d="M500,495 L500,540"/>
+<rect class="box" x="270" y="540" width="460" height="70" rx="8"/><text x="500" y="583" class="txt" font-size="19">Save / update user in database</text>
+<path class="line" d="M500,610 L500,655"/>
+<rect class="box" x="270" y="655" width="460" height="70" rx="8"/><text x="500" y="698" class="txt" font-size="19">Gemini Pro generates 7-day workout plan</text>
+<path class="line" d="M500,725 L500,770"/>
+<rect class="box" x="270" y="770" width="460" height="70" rx="8"/><text x="500" y="813" class="txt" font-size="19">Gemini Flash generates nutrition / recovery tip</text>
+<path class="line" d="M500,840 L500,885"/>
+<rect class="box" x="270" y="885" width="460" height="70" rx="8"/><text x="500" y="928" class="txt" font-size="19">Save original plan</text>
+<path class="line" d="M500,955 L500,1000"/>
+<rect class="box" x="270" y="1000" width="460" height="70" rx="8"/><text x="500" y="1043" class="txt" font-size="19">Display result page</text>
+<path class="line" d="M500,1070 L500,1115"/>
+<polygon class="decision" points="500,1115 730,1170 500,1225 270,1170"/><text x="500" y="1177" class="txt">Feedback submitted?</text>
+<text x="745" y="1162" class="txt" font-size="18">Yes</text>
+<path class="line" d="M730,1170 L830,1170"/>
+<rect class="box" x="830" y="1130" width="300" height="80" rx="8"/><text x="980" y="1165" class="txt" font-size="18">Gemini Pro revises plan;</text><text x="980" y="1190" class="txt" font-size="18">save updated plan</text>
+<path class="line" d="M980,1210 L980,1300 L730,1300"/>
+<text x="515" y="1255" class="txt" font-size="18" text-anchor="start">No</text>
+<path class="line" d="M500,1225 L500,1270"/>
+<rect class="box" x="270" y="1270" width="460" height="70" rx="8"/><text x="500" y="1313" class="txt" font-size="19">Admin views users at /view-all-users</text>
+<path class="line" d="M500,1340 L500,1385"/>
+<rect class="box" x="270" y="1385" width="460" height="70" rx="28"/><text x="500" y="1428" class="txt" font-size="19">End – stop the server</text>
+</svg>

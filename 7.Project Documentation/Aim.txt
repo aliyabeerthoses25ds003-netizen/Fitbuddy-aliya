@@ -1,0 +1,3 @@
+AIM
+
+To develop FitBuddy, an AI-powered fitness plan generator that collects basic user fitness information, generates a personalized 7-day workout plan and a nutrition or recovery tip using Google Gemini, stores the data in SQLite, and revises the plan based on user feedback.

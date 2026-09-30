@@ -1,0 +1,16 @@
+ALGORITHM
+
+1. Start the FitBuddy FastAPI application using Uvicorn.
+2. Initialize the SQLite database and create the tables if they do not exist.
+3. Display the input form on the Home page.
+4. Collect name, user ID, age, weight, fitness goal and workout intensity.
+5. Save or update the user record in the database.
+6. Send the goal and intensity to Gemini 1.5 Pro to generate a 7-day workout plan.
+7. Send the goal to Gemini 1.5 Flash to generate a nutrition or recovery tip.
+8. Save the generated plan as the original plan.
+9. Display the user details, workout plan and tip on the result page.
+10. If the user submits feedback, send the original plan and feedback to Gemini 1.5 Pro.
+11. Save the revised plan as the updated plan and display it.
+12. Allow the admin to view all users and their plans at /view-all-users.
+13. Provide the Swagger UI at /docs for testing the JSON API routes.
+14. End when the server is stopped.
